@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "379b9b00-5507-48d5-af43-e4ebf8f26ca4",
+		"name": "TEK-Careers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Departments",
+			"item": [
+				{
+					"name": "Get Departments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:55134/api/v1/departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Department",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Software Testing 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55134/api/v1/departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Department",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Software Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55134/api/v1/departments/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"departments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Locations",
+			"item": [
+				{
+					"name": "Get Locations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:55134/api/v1/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Location",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"US Head Office\",\r\n    \"city\": \"Baltimore\",\r\n    \"state\": \"MD\",\r\n    \"country\": \"United States\",\r\n    \"zip\": 21208\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55134/api/v1/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Location",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"US Head Office\",\r\n    \"city\": \"Baltimore\",\r\n    \"state\": \"MD\",\r\n    \"country\": \"United States\",\r\n    \"zip\": 21203\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55134/api/v1/locations/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"locations",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "Get Jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:55134/api/v1/jobs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Software Developer\",\r\n  \"description\": \"Job description here...\",\r\n  \"locationId\": 2,\r\n  \"departmentId\": 1,\r\n  \"postedDate\": \"2021-08-30T18:43:31.877Z\",\r\n  \"closingDate\": \"2021-08-30T18:43:31.877Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55134/api/v1/jobs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Job",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Software Developer\",\r\n  \"description\": \"Job description goes here...\",\r\n  \"locationId\": 1,\r\n  \"departmentId\": 2,\r\n  \"postedDate\": \"2021-08-30T18:43:31.877Z\",\r\n  \"closingDate\": \"2021-08-30T18:43:31.877Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55134/api/v1/jobs/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"jobs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:55134/api/v1/jobs/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"jobs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search jobs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "iuURGuQa8igAnXIYmN3dK7coNm5zXmSw4PzztyOtsgc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:55134/api/v1/jobs/list?q=&pageNo=1&pageSize=10&locationId=&departmentId=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55134",
+							"path": [
+								"api",
+								"v1",
+								"jobs",
+								"list"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": ""
+								},
+								{
+									"key": "pageNo",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "locationId",
+									"value": ""
+								},
+								{
+									"key": "departmentId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
